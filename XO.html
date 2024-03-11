@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-tac-toe</title>
+    <style>
+        .cen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            box-shadow: 4px 7px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            border-radius: 5px;
+        }
+        
+        button {
+            border: none;
+            border-radius: 2px;
+            box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+            border: 1px;
+            padding: 1px;
+            box-shadow: 1px 1.5px 0px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        .font {
+            font-size: 25px;
+            display: grid;
+            place-items: center;
+        }
+
+        body {
+            background-color: rgb(174, 230, 226)
+        }
+
+        
+    </style>
+    <script src="XO.js"></script>
+</head>
+<body>
+    <div class="cen" >
+        <table>
+            <tr id="trun">
+                <th>Turn</th>
+            </tr>
+            <tr>
+                <th id="num">
+                    <h1 name="turn">X</h1>
+                </th>
+                <th id="hi"></th>
+            </tr>
+            <tr><th>
+                <table>
+                    <tr>
+                        <th style="border-bottom : 2px solid #FF9933; border-right: 2px solid #FF9933;">
+                            <div class="font" id="th11" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO11(),WDL()"></input></div>
+                        </th>
+                        <th style="border-bottom : 2px solid #FF9933; border-right: 2px solid #FF9933;">
+                            <div class="font" id="th12" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO12(),WDL()"></input></div>
+                        </th>
+                        <th style="border-bottom : 2px solid #FF9933;">
+                            <div class="font" id="th13" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO13(),WDL()"></input></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="border-bottom : 2px solid #FF9933; border-right: 2px solid #FF9933;">
+                            <div class="font" id="th21" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO21(),WDL()"></input></div>
+                        </th>
+                        <th style="border-bottom : 2px solid #FF9933; border-right: 2px solid #FF9933;">
+                            <div class="font" id="th22" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO22(),WDL()"></input></div>
+                        </th>
+                        <th style="border-bottom : 2px solid #FF9933;">
+                            <div class="font" id="th23" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO23(),WDL()"></input></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="border-right: 2px solid #FF9933;">
+                            <div class="font" id="th31" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO31(),WDL()"></input></div>
+                        </th>
+                        <th style="border-right: 2px solid #FF9933;">
+                            <div class="font" id="th32" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO32(),WDL()"></input></div>
+                        </th>
+                        <th>
+                            <div class="font" id="th33" style="width: 50px; height: 50px;"><input type="text" class="cell" onclick="XO33(),WDL()"></input></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            <button onclick="re()" style="font-size: 10px;">Reset</button>
+                        </th>
+                    </tr>
+                </table>
+            </th></tr>
+        </table>
+    </div>
+</body>
+</html>
